@@ -1,0 +1,59 @@
+@import "./normalize";
+
+/* Скрываем scrollbar для Chrome, Safari и Opera */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+html {
+  -ms-overflow-style: none;
+  /* IE и Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  max-width: 1640px;
+  min-height: 100vh;
+  margin: 0 auto;
+
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  flex-grow: 1;
+  display: flex;
+  height: 100%;
+}
+
+@media (min-width: 769px) {
+  .container__desktop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .container__handheld {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container__desktop {
+    display: none;
+  }
+
+  .container__handheld {
+    width: 100%;
+  }
+}

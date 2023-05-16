@@ -1,0 +1,53 @@
+@import "../../styles/normalize",
+"../../styles/fonts";
+
+.catalog {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 70px;
+    height: fit-content;
+    margin-top: 60px;
+    margin-bottom: 200px;
+  }
+}
+
+@media (max-width: 1340px) and (min-width: 1201px) {
+  .catalog {
+    &__inner {
+      column-gap: 1%;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .catalog {
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 1015px) and (min-width: 769px) {
+  .catalog {
+    &__inner {
+      column-gap: 1%;
+    }
+  }
+}
+
+@media (max-width: 600px) and (min-width: 411px) {
+  .catalog {
+    &__inner {
+      column-gap: 1%;
+    }
+  }
+}
+
+@media (max-width: 410px) {
+  .catalog {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}

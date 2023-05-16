@@ -1,0 +1,17 @@
+@import "../../styles/normalize",
+"../../styles/fonts";
+
+.shop {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: -webkit-calc(100vw - 410px);
+  width: -moz-calc(100vw - 410px);
+  width: calc(100vw - 410px);
+}
+
+@media (max-width: 768px) {
+  .shop {
+    width: 100%;
+  }
+}

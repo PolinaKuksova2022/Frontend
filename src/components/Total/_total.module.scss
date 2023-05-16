@@ -1,0 +1,34 @@
+@import "../../styles/normalize", 
+'../../styles/fonts',
+'../../styles/mixins';
+
+.total {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+  @include font-face(14px, $height: 34px);
+
+  &__partPrice {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__title {
+    font-weight: 400;
+  }
+
+  &__price {
+    &::before {
+      content: "$ ";
+    }
+  }
+
+  &__totalPrice {
+    @include font-face(18px, 700, 34px);
+  }
+}
