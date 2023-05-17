@@ -1,5 +1,9 @@
 # Frontend-test
 
+
+https://frontend-test-pakuksova.vercel.app/
+
+
 Тестовое задание на позицию «Frontend-разработчик на React».
 
 <code>[Макет](https://www.figma.com/file/X6Xu67vhH0787Mt3LhTIUC/React-Test-(Copy)?node-id=1-3&t=9hDEe6zxZF5aC7SR-0)
